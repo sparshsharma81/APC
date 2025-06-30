@@ -1,4 +1,49 @@
 this is the first file
+ADVANCE PROGRAMMING CONCEPT 
 
-in apc  --- we have spring-boot
+in apc  --- we have spring-boot --- Advance programming concept
 spring boot is used in backend 
+
+now times ..60 - 70% projects are based on spring - boot 
+
+datatype promotion --- method overriding 
+
+we have created two methods of same method ...then which one is prefered ---- datatype promotion ----- typecasting 
+
+like there are two methods of same name--- they have object and string ..then which one is called...  --- in this the object class is not called ---string is called 
+
+in java --- object class is the main class 
+
+
+line in this..there is partility --- 
+like we call between StringBuffer and string --- then in this case.. the ambiquity issue will occur 
+
+
+jo programmer ke side se thik ho sakta hai.. ---excep
+
+check and uncheck exception 
+uncheck exception --- jo compiler apni side se check nhi kar sakta --- it is in filereader 
+
+like divide by 0 --- logically it is not possible...  so it is a uncheck exception 
+
+arraylist is hetrogenous in nature --- mtlb jo maan me aa raha hai use store kar sakte hai 
+
+treeset -- basically it will keep the elements in the sorted ascending order 
+
+--we can use custom comparator 
+
+comparable comparator 
+natural sorting order --- ascending order 
+
+abstraction --- hiding unncessary details -- we can acheive abstraction by using abstract class and interface 
+
+there is no difference between function and method 
+
+class ke bahar function --- 
+class ke andar --- method 
+
+
+in abstract class we can create abstract method and concrete method.. 
+concrete method is the method in which we cretae the instance of the method there only 
+
+when to use extend and when to implement it with new keywoard

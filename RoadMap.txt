@@ -1,0 +1,24 @@
+(1)Core Java (Opps, exception , Collections, multithreading)
+
+(2) JDBC --- it is a database for storing the data permenantly 
+it is like a connection between database 
+java database connectivity 
+
+3.servlet 
+
+A Java Servlet is a Java class used to extend the capabilities of servers,
+ most commonly web servers, by handling client requests and generating dynamic responses.
+  It serves as a server-side component in Java-based web applications.
+
+  like if we use instagram...the data which we enter..it will go somewhere.. 
+  like the passwords which you have entered..is this correct or not 
+  sarvlet --- it is communication between backend and frontend 
+
+
+  4. Spring 
+  --- it is a framework 
+  it has different modules ,, spring pole , spring jdbc , spring mvc , spring security
+
+  5.Spring-Boot 
+
+  6.MicroServices

@@ -47,3 +47,29 @@ in abstract class we can create abstract method and concrete method..
 concrete method is the method in which we cretae the instance of the method there only 
 
 when to use extend and when to implement it with new keywoard
+
+
+
+String s1 = "Java";
+Stirng s2  = "Java";
+sout(s1 == s2);  ///--- this will return true;
+sout(s1.equals(s2)); //--- it will output true;
+
+//the object is created in string constant pool 
+//whenever new object is created..it will points
+
+//whenever we create through new ---then it will go in string constant pool and heap memory 
+//and if we not create with new keywoard ---- then it will go to check in the string pool  
+
+String s1 = new String("Java");
+String s2 = new String("Java");
+System.out.println(s1 == s2);
+System.out.println(s1.equals(s2));
+
+we have used new keywoard --- so the object is created in heap memory and string pool both...
+and s2 = new String("Java") --- object is created in heap but not in string constant pool 
+
+so new object will not be created in string pool .. 
+between the heap and string constant pool ...heap is prioritized ..
+ 
+and if the object which is created..if it is already present in the string constant pool --- then it will reference to that...

@@ -1,0 +1,4 @@
+classes and object 
+like vehicle is a class and car is a object 
+
+private keywoard --- though which we can achieve data hiding 

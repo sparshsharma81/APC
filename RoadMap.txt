@@ -22,3 +22,6 @@ A Java Servlet is a Java class used to extend the capabilities of servers,
   5.Spring-Boot 
 
   6.MicroServices
+
+after java7 main method is mendatory 
+... before it..we can execute

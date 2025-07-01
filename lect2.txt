@@ -2,3 +2,40 @@ classes and object
 like vehicle is a class and car is a object 
 
 private keywoard --- though which we can achieve data hiding 
+
+now we are implementing data hiding 
+
+if we want to access the element of the one file in other..then we can do it by making object 
+
+abstract class is 
+
+concrete method... jis method ka implementation usi method me kar de 
+
+interface --- sirf abstract method rakh rakh skte hai--
+basically --- we can declare method but not implement it// we can use it with implement keywoard 
+
+
+
+
+Encapsulation 
+biniding of data into one 
+
+
+INHERITANCE 
+
+in interface ---we only declare method..not implement  it ...to ambiquity issude does not arrise in java
+
+
+POLYMORPHISM 
+
+
+
+overriding --- 
+
+
+
+Mobile mob1 = new Nokia();
+mob1.camera
+
+
+default private protected public 

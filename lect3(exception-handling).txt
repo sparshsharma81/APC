@@ -3,3 +3,51 @@ exception is unexpected event
 like divide by 0 --- arithmetic exception 
 
 check and uncheck exception 
+
+exception --- is at runtime..not compile time 
+
+check exception --  which compiler can check ... ---we handle 
+
+uncheck exception --- number divided by 0 --- not required to be handled-- but we can handle. ..
+
+exception class heirarchy 
+
+throwable class  it has 2 types 
+exception and error 
+
+exception -- is the one which we can make it correct 
+
+error --- jo apne side se thik nahi kara ja sakta ...
+
+
+exception  ---- like runtime exception , sql exception , ioexception
+
+exception handling is of 2 ways..by using try catch and throws  
+
+
+
+runtime exception 
+ArrayIndexOutOfBoundException 
+Arithmetic Exception 
+Null Pointer Exception 
+
+
+java.lang.Object
+   └── java.lang.Throwable
+         ├── java.lang.Error
+         └── java.lang.Exception
+
+
+try{
+    Sout("Statement 1);
+    Sout(10/0);
+    Sout("Statement2");
+}
+catch(Arithmetic Exception e){
+    sout(10/2);
+}
+
+iska answer statemen1 
+5 
+
+ek baar try catch se nikal gaya..fir nahi aayega... 

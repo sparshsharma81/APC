@@ -1,0 +1,5 @@
+exception is unexpected event 
+
+like divide by 0 --- arithmetic exception 
+
+check and uncheck exception 

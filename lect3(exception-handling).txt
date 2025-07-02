@@ -128,3 +128,20 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 	at Main.main(Main.java:4)
 
 === Code Exited With Errors === this code will give output as this....
+
+
+NULL POINTER EXCEPTION 
+
+it is a exception which occur when we want to access the null element 
+
+
+check exception --- check exception ---
+
+runtime exception and its child classes ---- they all are uncheck exception 
+
+rest all like filereader exception comes that are checked exception 
+like file not found --- it is a check exception 
+
+
+
+throw --

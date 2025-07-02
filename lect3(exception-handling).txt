@@ -51,3 +51,40 @@ iska answer statemen1
 5 
 
 ek baar try catch se nikal gaya..fir nahi aayega... 
+
+try{
+    Sout(10/0);
+
+}
+catch(Excecption e){
+    sout("Exception e");
+
+}
+catch(RunTimeException e){
+    Sout("RunTimeException");
+}
+
+this program will not get executed....
+
+variable are store in heap memory and methods are stored in stack memory
+
+
+
+pvsm(String args[]){
+    m1();
+}
+psv m1(){
+    sout("m1");
+    m2();
+}
+psv m2(){
+    m2();
+    sout("m2 method call");
+
+}
+psv m3(){
+    sout("m3 is called");
+    sout(10/0);
+}
+
+//calling the main method 

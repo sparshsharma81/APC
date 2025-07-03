@@ -1,0 +1,10 @@
+throw keywoard --- it is used to throw custom exception 
+
+like sout(10/0) --- arithmetic exception --- this is inbuild exception 
+if we want to make our customized exception --- like not using build in exception 
+
+
+like if the user has age less than 18 ---
+
+
+new keywoard will create object 

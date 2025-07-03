@@ -32,6 +32,73 @@ like this ...it will throw custom made new exception
 
 
 throws basically method ko delicate kar deta hai..apne main method k paas...
+--jis method me 
+
+
+throw --- it will used to throw manummanual exception 
 
 
 
+
+
+----------------------------THROW ----------------------
+                ✅ throw
+                Used to actually throw an exception.
+
+                Happens inside a method.
+
+                You create and throw an object of an exception.
+
+                📌 Syntax:
+                
+                
+                throw new ExceptionType("message"); 
+
+
+
+
+---------------------------THROWS----------------
+                    ✅ throws
+                    Used in method declarations.
+
+                    Tells the compiler and the caller that the method might throw an exception.
+
+                    Used for checked exceptions (like IOException, SQLException).
+
+                    //it will delicate the method...
+
+                    📌 Syntax:
+
+                    returnType methodName() throws ExceptionType {
+                        // method body
+                    }
+                    🔸 Example:
+
+                    public void readFile() throws IOException {
+                        // file reading code
+                    }
+
+
+
+
+
+
+
+---------------------NUMBER FORMAT exception-----------------------
+                        System.out.println(Integer.parseInt("10"));
+
+
+                        System.out.println(
+                        Integer.parseInt("ten"); ----- it will give mnumber format exception 
+                        )
+
+
+
+
+
+
+
+
+
+--------------------NOW TILL... EXCEPTION IS FINISHED-------------
+AFTER THING IS IN COLLECTION FOLDER.....

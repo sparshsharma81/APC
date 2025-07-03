@@ -1,0 +1,128 @@
+collection ka kaam hai multiple data ko store karna
+
+array --- it is homogenous in nature
+array is fixed in size 
+
+
+collection ---- it is hetrogenous in nature 
+collection is dynamic in nature 
+
+arrays --- it is a util class ---- so we do Arrays.sort();
+
+
+like if we want to reverse a array..we have to do by writing manual method
+but in the case of collection---- there are inbuild memthods
+
+
+
+Collections ka parent method ----
+
+
+----------------------✅ Top-Level Hierarchy:-----------------
+                        java.lang.Object
+                                ↑
+                        java.util.Collection (Interface)
+
+
+
+
+-----------------------------🔷 Collection Interface Hierarchy Breakdown:--------------------------
+                                       
+                                                Collection (I)
+                                                /     |      \
+                                                /      |       \
+                                            List     Set     Queue  ← interfaces ---- these three are also interface.....
+                                            |        |        |
+                                        ArrayList HashSet  LinkedList
+                                        LinkedList LinkedHashSet PriorityQueue
+                                        Vector     TreeSet   ArrayDeque
+                                        Stack
+
+                                        Note: Map is not part of Collection.
+
+Collection is a Interface --- not class
+
+----------------------------------------------------------------------------------------------------------
+
+
+                                    -----------------🔸 1. Collection (Interface)
+                                                    Root interface for most data structures in Java.    
+
+
+
+
+                                    ---------------🔸 2. List (Interface)
+                                                    Ordered, allows duplicates, indexed.
+
+                                                    Class	Description
+                                                    ArrayList	Resizable array, fast random access
+                                                    LinkedList	Doubly linked list
+                                                    Vector	Synchronized, legacy
+                                                    Stack	LIFO stack, extends Vector
+
+
+
+
+                                    ---------------🔸 3. Set (Interface)
+                                                    Unordered, no duplicates.
+                                                    Class	Description
+                                                    HashSet	No order, uses hash table
+                                                    LinkedHashSet	Maintains insertion order
+                                                    TreeSet	Sorted set (uses TreeMap internally)
+
+
+                                    ---------------🔸 4. Queue (Interface)
+                                                    Follows FIFO or priority-based ordering.
+                                                    Class	Description
+                                                    LinkedList	Implements both List and Queue
+                                                    PriorityQueue	Orders elements based on priority
+                                                    ArrayDeque	Resizable-array implementation
+
+
+
+
+
+                                                        🔸 Map (Separate Hierarchy — Not under Collection)
+
+
+                                                                    Map (Interface)
+                                                                    ├── HashMap
+                                                                    ├── LinkedHashMap
+                                                                    └── TreeMap
+
+
+                                                                
+
+-----------------------------------🧠 Summary Diagram ----------------------------
+
+                                        Collection
+                                        ├── List
+                                        │   ├── ArrayList
+                                        │   ├── LinkedList
+                                        │   ├── Vector
+                                        │   └── Stack
+                                        ├── Set
+                                        │   ├── HashSet
+                                        │   ├── LinkedHashSet
+                                        │   └── TreeSet
+                                        └── Queue
+                                            ├── LinkedList
+                                            ├── PriorityQueue
+                                            └── ArrayDeque
+
+
+
+
+
+
+-------------------------SYNCHRONIZATION AND MULTITHREADING-----------------
+
+like when we want to give biryani to a dog..
+like multiple dogs are there to eat biryani...
+
+now the biryani is data and dogs are thread
+so if multiple dogs are eating biryani..then the biryani is lost
+
+
+THIS IS SIMILAR TO MULTITHREADING 
+like if there is multithreading..then the data will get lost...

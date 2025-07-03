@@ -137,7 +137,8 @@ like if we want to save data..then we use SYNCHRONIZATION which will execute mul
 
 
 memory threading --- multiple threads are executed at same time
-synchornization --- multiple thread one by one 
+synchornization --- multiple thread one by one  --- but it would increase the time complexicity 
+
 
 
 
@@ -154,3 +155,68 @@ synchornization --- multiple thread one by one
 
 
 arraylist --- like it has index
+
+
+
+✅ Key Differences Between LinkedList and ArrayList
+
+Feature	                            ArrayList	                         LinkedList
+Underlying Data Structure	       Dynamic array               	        Doubly linked list
+Access Time (get/set)	            Fast – O(1) (random access)	        Slow – O(n) (needs traversal)
+Insertion at end	                Fast – Amortized O(1)	            Fast – O(1)
+Insertion in middle/start	        Slow – O(n) (shift needed)          Fast – O(1) if at head, O(n) otherwise
+Deletion from end	                Fast – O(1)	                        Fast – O(1)
+Deletion from middle/start	        Slow – O(n)	                        Fast – O(1) if at head, O(n) otherwise
+Memory use	                        Less memory (just data)	            More memory (data + 2 pointers)
+Iteration performance	            Better (cache friendly)	             Slower
+
+
+
+
+🟢 When to Use ArrayList
+
+Use ArrayList when:
+You need fast random access using indexes (e.g., get(i)).
+Your application does more reads than insertions/deletions.
+You frequently add/remove elements at the end of the list.
+
+📌 Example:
+
+ArrayList<String> names = new ArrayList<>();
+names.add("Alice");  // fast
+names.get(0);        // fast
+
+
+
+
+🔵 When to Use LinkedList
+
+Use LinkedList when:
+You need to frequently insert or delete elements from the beginning or middle of the list.
+You don't need fast access by index.
+
+📌 Example:
+
+LinkedList<String> queue = new LinkedList<>();
+queue.addFirst("Job1");  // fast
+queue.removeLast();      // fast
+
+
+
+capacity in arraylist --- CurrentCapacity *3/2  +1 
+FieldRatio is not in this
+
+
+by defualt ...we get 16 elements in HashMap and HashSet 
+filedRation --- like for example if we say field ratio is 0.9 
+this means that if 90% of size of hashset or hashmap...then the size will increase 
+
+BY DEFAULT -- FILED-RATION -- 75% 
+SO IF 12 ELEMENTS ARE FILLED..THEN ITS SIZE WILL INCREASE 
+
+
+
+in arraylist -- 
+sorting technique is not allowed 
+not synchronized method 
+time complexicity reduced --- 

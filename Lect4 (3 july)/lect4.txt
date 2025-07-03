@@ -8,3 +8,30 @@ like if the user has age less than 18 ---
 
 
 new keywoard will create object 
+
+
+class VotingAgeException extends RuntimeException {
+    public VotingAgeException(String message) {
+        super(message);
+    }
+}
+
+// Main Class
+public class Main {
+    public static void main(String[] args) {
+        int age = 15;
+        if (age < 18) {
+            throw new VotingAgeException("You are not allowed to vote");
+        } else {
+            System.out.println("You are allowed to vote");
+        }
+    }
+}
+
+like this ...it will throw custom made new exception 
+
+
+throws basically method ko delicate kar deta hai..apne main method k paas...
+
+
+

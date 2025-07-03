@@ -126,3 +126,31 @@ so if multiple dogs are eating biryani..then the biryani is lost
 
 THIS IS SIMILAR TO MULTITHREADING 
 like if there is multithreading..then the data will get lost...
+
+like if there are multiplethreads...then data will be lost..
+and in order to preserve it... like feeding each dog one by one..
+this is known as SYNCHRONIZATION
+
+
+like if we want to save data..then we use SYNCHRONIZATION which will execute multiple thread one by one
+
+
+
+memory threading --- multiple threads are executed at same time
+synchornization --- multiple thread one by one 
+
+
+
+
+
+-----------------------------ARRAYLIST ---------------------
+                arraylist is a dynamic array 
+                vector is a legacy collection 
+                legacy colleciton --- when first hand java was introduced..... 1995 ----
+                in the first version of java.... all the features was legacy 
+                like vector was introduced in the first version of java.. so vector is a legacy collection 
+
+
+
+
+arraylist --- like it has index

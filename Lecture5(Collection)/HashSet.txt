@@ -1,0 +1,78 @@
+public class HashSet{
+    public static void main(String args[]){
+        HashSet<Integer>hs = new HashSet<>();
+
+        hs.add(20);
+        hs.add(30);
+        hs.add(10);
+        hs.add(40);
+        System.out.println(hs);
+        if we print it..it will be printed in random order 
+
+        but once it is printed..if will follow a particular order....
+        in hashset elements are stored in random elements...
+        and then we will print in that order..
+
+        as hashmap..it follow the order of hashing 
+
+        //like example ---- 30 15 25 32 1 19 23 
+
+        when we are storing elements in hashset...it willmake a hashset ...
+
+        it will make a bucket..
+        and use hashing to store the elements in that bucket 
+        
+        it will do n% 16 
+        like for example if the first element in 32 --- then it will do 32 % 16 ..= 14 --- then at 14th index it will store 32
+        15 % 16 = 15 --- at 15 index ..it will store 15
+        25 % 16 = 9 --- at 9th index it will store 25
+
+        like if we put 48 ..then it is like 48 % 16 = 0 ..then at 0th position 48 is stored..
+        but 32 is already at 0 ..so 48 will be stored there..
+        it will follow the left to right approach again...
+        and hence first 32 and then 48 is then other elements 
+    }
+}
+
+
+
+it was introduced in 1.2
+it is a direct child interface to Collection interface .
+it is not index, based , it able to arrange all elements on the basis of elemnt hashcode values.
+it will not allow duplicate elements.
+it will not follow insertion order. 
+
+note: LinkedHashSet will follow insertion order 
+it will not follow sorting order 
+
+Note: sortedset , mavigableSet and TreeSet -- follow sorting order 
+
+it able to allow only one null value.
+
+Note : SortedSet, NavigableSet and TreeSet are not allowing even single null value.
+
+
+HashSet is a direct implementation class to set interface 
+it was introduced in JDK 1.2
+it is no index.based . it able to arrange all the elements on the basis of elements hashcode values
+
+ it will not allow duplicate elements 
+ it will not follow insertion order 
+ it will not follow sorting order 
+ it will not follow sorting order.
+ it is able to allow only one null value 
+
+ its internal data structure is "Hashtable".
+
+ its initial capacity is "16" elements and its initial Fill_Ratio is 75%
+ it is not synchronized
+
+ almost all the methods are not synchronized in hashset
+ it allows more than one thread at a time 
+ it follows parallel execution.
+ it will reduce execution time.
+
+ it improves performance of the application.
+ it is not giving gurantee for data consistency 
+ it is not thread safe 
+ 

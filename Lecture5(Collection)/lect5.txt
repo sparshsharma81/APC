@@ -1,0 +1,41 @@
+java says whenever we are making a collection..then we should define its generic 
+like in case of arraylist..we should define integer
+
+ArrayList<Integer>h1 = new ArrayList<>();
+
+
+Collection 
+it is an interface provided by JAVA along with JDK 1.2 version
+it able to represent a group of individual elements as single unit 
+it has provided the following methods common to every implementation class. 
+
+Method 
+1.Public boolean add(Object add)->This method is able to add the specified element to Collection object 
+
+2.public boolean addAll(Collection c)-> this method can be used to add all the elements of specified Collection 
+to the present Collection object.
+
+3.public boolean remove(object obj)-> this method can be used to remove the specified element from the Collection object 
+
+4.public boolean removeAll(Colleti)
+
+
+add(object obj)
+Collection1.add("Apple")
+
+
+
+2. addAll(Collection c)
+collection2.add("Banana");
+Collection2.add("Dates");
+Collection2.addAll(collection2);
+sout("After addAll);
+
+
+
+4.removeAll(Collection c)
+collection1.removeAll(collection2);
+System.out.println("after removeAll():" + collection1);
+
+5.contains(Object obj)
+System.out.println("Contains 'Apple'?" + collection1.contains("Apple"));

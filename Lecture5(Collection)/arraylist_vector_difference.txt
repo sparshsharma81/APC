@@ -1,0 +1,18 @@
+Arraylist 
+every method present inside arraylist --- non synchronized 
+
+at a time multiple thread are allow to operate on arraylist simulatenously and hence arraylist 
+object is not thread safe
+
+relatively performance is high because htread are not required to wait 
+introduced in 1.2 version and it is non legacy 
+
+
+vector 
+every method present in vector is synchronized 
+ 
+ at a time only one thread is allow to operate on vector objecct and hence vector object is always thread safe 
+
+ relativedly performance is low because threads are requred to wait 
+
+ intorduced in 1.0 version and is legacy 

@@ -1,0 +1,18 @@
+it was introduced in JDK1.2 version
+it is not legacy Collection 
+it is a direct implementation class to List interface 
+it is index based
+it allows duplicate elements 
+it follows insertion order 
+it is not following sorting order 
+it allows hetrogenous elements 
+it allows null values in any number 
+its internal data structure is "Double LinkedList"
+it is best choice for frequent insertions and deletions.
+it is not synchronized colleciton 
+no method in synchronized in LinkedList
+it allows more than one thread to acccess data.
+it will follow parallel execution 
+it will decrease execution time 
+it will improve application performance 
+it is not giving gurantee for data consistency 

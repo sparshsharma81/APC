@@ -1,0 +1,26 @@
+it was provided by java along with java1.2 version 
+it is a direct implementation class to List interface.
+it is index based.
+
+it allows duplicate elements 
+it follows insertion order.
+
+it will not follow sorting order.
+it aloows hetrogenous elements.
+
+it allows any number of null values
+its initial capacity is 10 elements 
+its incremental capacity ration is          new_Capacity = (Current_Capacity * 3/2) + 1
+
+it is best option for frequent retrieval options
+
+it is not synchronized ---- means multiple threads can execute.
+no method is synchronized method in arraylist 
+it allows more than one thread to access data.
+it will reduce execution time 
+it will improve application performance
+ it is not thread safe
+
+
+
+

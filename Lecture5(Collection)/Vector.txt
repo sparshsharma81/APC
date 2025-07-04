@@ -1,0 +1,13 @@
+it was introduced in JDK1.0 version 
+it is legacy collection 
+
+it is a direct implementation class to List interface 
+it is index based 
+it allows duplicate elements 
+it follows insertion order 
+it wil not follow sorting order 
+it allows hetrogenous elements 
+
+
+
+

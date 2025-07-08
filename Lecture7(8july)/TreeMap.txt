@@ -1,0 +1,5 @@
+it was introduced in JDK 1.2 
+it is not legacy 
+it is an implementation class to Map, sortedMap and navigableMMap interface 
+it able to allow elements in the form of Key-value pairs, where both keys and values are objects 
+it will not allow duplicate elements at key side, but , it able to allow duplicate values...

@@ -1,0 +1,13 @@
+TreeSet t = new TreeSet();
+
+TreeSet in a class in Java that implements Set and uses a self balancing binary tree(Red-Black Tree)
+
+✅ Key Features:
+No duplicate elements (just like all Set types).
+
+Sorted in ascending (natural) order by default.
+
+Allows custom sorting using a Comparator.
+
+Operations like add(), remove(), contains() take O(log n) time.
+

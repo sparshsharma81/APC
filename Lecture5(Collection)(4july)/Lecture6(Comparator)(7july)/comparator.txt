@@ -1,0 +1,23 @@
+comparator...
+
+it is used to compare the two values 
+
+it is present in java.util.package..
+
+comparator has two functions 
+equals and commpare 
+
+public int commpareTo(Object o);   ---- this is comparator 
+
+
+obj1.compareTo(obj2);
+
+returns negative when obj1 come before obj2 
+return positive when obj1 come after obj2 
+returns 0 when obj is equals to obj2 
+
+
+System.out.println("A".commpareTo("Z")); ---- it will return -25
+System.out.println("Z".compareTo("K"))    --- it will return 15
+System.out.println("Z".commpareTo("Z")) --- since the both values are equal..so it will return 0 output
+

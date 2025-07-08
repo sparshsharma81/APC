@@ -10,4 +10,111 @@ it allows hetrogenous elements
 
 
 
+Vector:  
+
+ 
+
+• It was introduced in JDK1.0 version.  
+
+• It is Legacy Collection. 
+
+ • It is a direct implementation class to List interface.  
+
+• It is index based. 
+
+ • It allows duplicate elements. 
+
+ • It follows insertion order. 
+
+ • It will not follow sorting order.  
+
+• It allows heterogeneous elements. 
+
+ • It allows any number of null values. 
+
+ • Its internal data structure is "Resizable Array". 
+
+ • Its initial capacity is 10 elements. 
+
+ • It is best choice for frequent retrieval operations.  
+
+• It is not good for frequent insertions and deletion operations.  
+
+• Its incremental capacity is double the current capacity. New_capacity = 2*Current_Capacity  
+
+• It is synchronized elements.  
+
+• All the methods of vector class are synchronized. 
+
+ • It allows only one thread at a time. 
+
+ • It follows sequential execution. 
+
+ • It will increase execution time. 
+
+ • It will reduce application performance. 
+
+ 
+
+ 
+
+ 
+
+Constructors: 
+
+ 
+
+ • public Vector() It can be used to create an empty Vector object with the initial capacity 10 elements.  
+
+EX: Vector v = new Vector(); 
+
+ System.out.println(v.capacity()); 
+
+  
+
+ 
+
+ 
+
+• public Vector(int capacity) It can be used to create an empty vector object with the specified capacity value.  
+
+EX: Vector v = new Vector(20);  
+
+System.out.println(v.capacity());  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+• public Vector(int capacity, int incremental_Ratio) This constructor can be used to create an empty Vector object with the specified initial capacity and with the specified incremental ratio. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Methods: 
+
+ • public void addElement(Object obj) It will add the specified element to Vector. 
+
+ • public Object firstElement() It will return first element of the Vector.  
+
+• public Object lastElement() It will return last element of the Vector. 
+
+public Object elementAt(int index) It will return an element available at the specified index.  
+
+• public void removeElement(Object obj) It will remove the specified element from Vector.  
+
+• public void removeElementAt(int index) It will remove an element existed at the specified index value.  
+
+• public void removeAllElements() It will remove all elements from Vector.
 

@@ -5,3 +5,19 @@ the output is in random order ...
 
 
 empty.start() and empty1.start();
+
+
+SLEEP() method 
+
+
+
+------------------------JOIN METHOD 
+overriding , marriage concepts 
+
+join method preference set krta hai
+
+join method is used to set preference 
+
+join ka kaam hai ki pehle vo execute hoga..fir dusra execute hoga..
+
+YIELD METHOD

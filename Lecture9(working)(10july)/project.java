@@ -8,7 +8,7 @@ public class project {
         }
         
          catch (ArithmeticException e) {
-            System.out.println("Caught exception: " + e);
+            System.out.println("There is exception" + e);
         }
         catch(NullPointerException E){
             System.out.println("Nullpointer exception " + E);

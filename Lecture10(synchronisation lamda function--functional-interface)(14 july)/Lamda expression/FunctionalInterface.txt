@@ -1,0 +1,7 @@
+functional interface 
+is that interface which has one abstract method 
+we can also have non abstract 
+
+
+from java8 we can keep non abstract method inside interface 
+

@@ -1,0 +1,17 @@
+class Test{
+    int count =0;
+    psvm{
+        t1.start();
+        t2.start();
+
+    }
+    public void count(){
+        count++;
+    }
+
+}
+
+
+multithreading and synchhronisation 
+
+

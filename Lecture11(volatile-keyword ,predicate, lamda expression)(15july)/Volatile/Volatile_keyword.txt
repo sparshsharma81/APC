@@ -1,0 +1,24 @@
+The volatile keyword in Java is used to indicate that a variable’s value may be changed by multiple threads 
+and should always be read directly from main memory, not from a thread's local cache
+
+
+
+VOLATILE ---- IT IS A KEYWORD WHICH IS REMOVED WITH VARIABLE 
+
+
+
+if we want to make thread
+
+🔍 Why volatile is needed
+In multithreaded programming, threads may cache variables for performance. 
+Without volatile, a thread may not see the latest value of a shared variable updated by another thread.
+
+
+
+for every thread there is os and whatever is in os..it will get stored to cache 
+so for that we make it volatile 
+
+
+when on one variable multiple threads execute --- then we get updated value everytime
+//volatile is used so that it is not stored in cache
+it is depricated --- it is not used now days 

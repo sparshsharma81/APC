@@ -1,0 +1,58 @@
+The Optional class in Java is a container object which may or may not contain a non-null value.
+ It was introduced in Java 8 to help avoid NullPointerException.
+
+
+
+example 
+String name = getName();  // might return null
+System.out.println(name.length()); // ❌ NullPointerException if name is null
+
+
+With Optional:
+
+
+Optional<String> name = getName(); // returns Optional<String>
+if (name.isPresent()) {
+    System.out.println(name.get().length()); // safe access
+}
+
+
+🔹 Basic Syntax and Methods
+
+Optional<String> opt = Optional.of("Hello");     // creates Optional with value
+Optional<String> empty = Optional.empty();       // creates empty Optional
+Optional<String> maybe = Optional.ofNullable(null); // may be null
+
+
+🔹 Common Methods
+Method	Description
+isPresent()	returns true if value is present
+get()	returns the value (⚠️ unsafe if value is null)
+orElse(value)	returns value if present, else returns value
+orElseGet(Supplier)	uses lambda to provide fallback
+ifPresent(Consumer)	executes code if value is present
+map()	transforms value if present
+filter()	filters value using a condition
+
+
+import java.util.Optional;
+
+public class Main {
+    public static void main(String[] args) {
+        Optional<String> name = Optional.of("Sparsh");
+
+        name.ifPresent(n -> System.out.println("Length: " + n.length())); // prints Length: 6
+
+        String fallback = name.orElse("Default");
+        System.out.println(fallback); // prints Sparsh
+    }
+}
+
+
+optional class 
+
+empty() --when our string is null 
+of() ---when we are sure that our string is not null 
+ofNullable()  ---when our string can or can not be null 
+
+these are three methods and we need to make optional class method on this basis

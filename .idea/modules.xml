@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/APC.iml" filepath="$PROJECT_DIR$/APC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lecture2(OOPS)(1july)/Lecture2(OOPS)(1july).iml" filepath="$PROJECT_DIR$/Lecture2(OOPS)(1july)/Lecture2(OOPS)(1july).iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lecture4(throw-throws , collection-framework) (3 july)/Lecture4(throw-throws , collection-framework) (3 july).iml" filepath="$PROJECT_DIR$/Lecture4(throw-throws , collection-framework) (3 july)/Lecture4(throw-throws , collection-framework) (3 july).iml" />
+    </modules>
+  </component>
+</project>

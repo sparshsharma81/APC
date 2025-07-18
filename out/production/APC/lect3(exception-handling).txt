@@ -1,0 +1,147 @@
+exception is unexpected event 
+
+like divide by 0 --- arithmetic exception 
+
+check and uncheck exception 
+
+exception --- is at runtime..not compile time 
+
+check exception --  which compiler can check ... ---we handle 
+
+uncheck exception --- number divided by 0 --- not required to be handled-- but we can handle. ..
+
+exception class heirarchy 
+
+throwable class  it has 2 types 
+exception and error 
+
+exception -- is the one which we can make it correct 
+
+error --- jo apne side se thik nahi kara ja sakta ...
+
+
+exception  ---- like runtime exception , sql exception , ioexception
+
+exception handling is of 2 ways..by using try catch and throws  
+
+
+
+runtime exception 
+ArrayIndexOutOfBoundException 
+Arithmetic Exception 
+Null Pointer Exception 
+
+
+java.lang.Object
+   └── java.lang.Throwable
+         ├── java.lang.Error
+         └── java.lang.Exception
+
+
+try{
+    Sout("Statement 1);
+    Sout(10/0);
+    Sout("Statement2");
+}
+catch(Arithmetic Exception e){
+    sout(10/2);
+}
+
+iska answer statemen1 
+5 
+
+ek baar try catch se nikal gaya..fir nahi aayega... 
+
+try{
+    Sout(10/0);
+
+}
+catch(Excecption e){
+    sout("Exception e");
+
+}
+catch(RunTimeException e){
+    Sout("RunTimeException");
+}
+
+this program will not get executed....
+
+variable are store in heap memory and methods are stored in stack memory
+
+
+
+pvsm(String args[]){
+    m1();
+}
+psv m1(){
+    sout("m1");
+    m2();
+}
+psv m2(){
+    m2();
+    sout("m2 method call");
+
+}
+psv m3(){
+    sout("m3 is called");
+    sout(10/0);
+}
+
+//calling the main method 
+
+it is rendered with stack frame
+  first main go in stack 
+  then m1 
+  then m2 
+  then m3 
+
+
+  if we replace the sout with 10
+
+
+  public class DEfaultException{
+    public static void main(String args[]){
+        System.out.println("assigned");
+Manager();
+    }
+    public static void Manager(){
+        TeamLead();
+        System.out.println("Assigned to Team Lead");
+
+    }
+    public static void TeamLead(){
+        System.out.println(10/0);
+        Employee();
+    }
+    public static void Employee(){
+        System.out.println("I am doing great work");
+    }
+
+  }
+
+
+  ERROR!
+assigned
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at Main.TeamLead(Main.java:12)
+	at Main.Manager(Main.java:7)
+	at Main.main(Main.java:4)
+
+=== Code Exited With Errors === this code will give output as this....
+
+
+NULL POINTER EXCEPTION 
+
+it is a exception which occur when we want to access the null element 
+
+
+check exception --- check exception ---
+
+runtime exception and its child classes ---- they all are uncheck exception 
+
+rest all like filereader exception comes that are checked exception 
+like file not found --- it is a check exception 
+
+
+
+throw --

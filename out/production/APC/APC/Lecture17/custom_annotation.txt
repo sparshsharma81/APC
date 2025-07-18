@@ -1,0 +1,86 @@
+inbuild annotation
+ 
+ override , suppreicated  ---- they are inbuild java annotation 
+
+ how to make annotations
+
+ java has inbuild annotation --- interface annotation 
+
+
+ ✅ What are Annotations?
+Annotations are like metadata (extra info) attached to code — classes, methods, variables, etc.
+They do not change the logic, but they give instructions to the compiler or frameworks.
+
+
+
+🧠 Think of them like:
+“Sticky notes” or “labels” on your code telling tools what to do.
+
+
+
+Syntax 
+@Override
+public String toString() {
+    return "Hello!";
+}
+
+
+Here, @Override is an annotation that tells the compiler:
+
+“This method is meant to override a method from a superclass.”
+
+
+🔍 Why Use Annotations?
+Compiler instructions (@Override, @SuppressWarnings)
+
+Code documentation (@Deprecated)
+
+Runtime processing (used heavily in frameworks like Spring, JUnit)
+
+
+
+🧪 Common Built-in Annotations
+Annotation	Purpose
+@Override	Checks if you're actually overriding a method
+@Deprecated	Marks method/class as outdated
+@SuppressWarnings	Hides warnings (e.g., unchecked typecasts)
+@FunctionalInterface	Ensures the interface has only one abstract method
+
+
+
+Annotation a = obj.getAnnotation(SmartPhone.class);
+
+
+
+TARGET annotation --- through it we can tell the annotation which we have made...where to use it
+
+
+
+also to tell where to use it ..like where to use at runtime or compiler time --
+java has inbuild annotation --- RETENTION 
+
+
+
+
+//we define annotation using @interface 
+
+import java.lang.annotation 
+
+
+
+import java.lang.annotation.*;
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+@interface MyAnnotation {
+    String value(); // this is an attribute
+}
+
+
+Explanation:
+@Retention(RetentionPolicy.RUNTIME) → This tells Java to keep the annotation at runtime, so it can be accessed using reflection.
+
+@Target(ElementType.METHOD) → This says the annotation can only be used on methods.
+
+value() → This is like a parameter to pass to your annotation.
+

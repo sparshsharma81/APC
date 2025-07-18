@@ -1,0 +1,97 @@
+it is not child interface in collection interface 
+it able to arrange all the elements in form of Key-value pairs
+
+in map..both keys and values are objects 
+duplicates are not allowed at keys, but values may be duplicated
+
+only one null value is allowed at key side,but,any number
+
+
+It was introduced in JDK 1.2 version. 
+
+• It is not child interface to Collection Interface. 
+
+• It able to arrange all the elements in the form of Key-value pairs. 
+
+• In Map, both keys and values are objects. 
+
+• Duplicates are not allowed at keys, but values may be duplicated. 
+
+• Only one null value is allowed at keys side, but, any number of null values are allowed 
+
+at values side. 
+
+• Both keys and Values are able to allow heterogeneous elements. 
+
+• Insertion order is not followed. 
+
+• Sorting order is not followed. 
+
+treeset --- ONLY DATA STRUCTURE WHICH ALLOWS HETROGENOUS DATA STORAGE -- BECAUSE IT USE COMPARATOR 
+
+
+CLONE METHOD  --- copy krne ke liye use hota hai... 
+
+
+
+
+Methods: 
+
+• public void put(Object key, Object value) 
+
+It will add the specified key-value pair to Map. 
+
+• public void putAll(Map m) 
+
+It will add all key-value pairs of the specified map to the present Map object. 
+
+• public Object get(Object key) 
+
+It will return value of the specified key. 
+
+• public Object remove(Object key) 
+
+It will remove a key-value pair from Map on the basis of the specified key. 
+
+• public int size() 
+
+It will return number of key-value pairs of a Map 
+
+• public boolean containsKey(Object key) 
+
+It will check whether the specified key is existed or not at keys side. 
+
+• public boolean cotainsValue(Object key) 
+
+It will check whether the specified value is available or not at values side. 
+
+Methods: 
+
+• public void put(Object key, Object value) 
+
+It will add the specified key-value pair to Map. 
+
+• public void putAll(Map m) 
+
+It will add all key-value pairs of the specified map to the present Map object. 
+
+• public Object get(Object key) 
+
+It will return value of the specified key. 
+
+• public Object remove(Object key) 
+
+It will remove a key-value pair from Map on the basis of the specified key. 
+
+• public int size() 
+
+It will return number of key-value pairs of a Map 
+
+• public boolean containsKey(Object key) 
+
+It will check whether the specified key is existed or not at keys side. 
+
+• public boolean cotainsValue(Object key) 
+
+It will check whether the specified value is available or not at values side. 
+

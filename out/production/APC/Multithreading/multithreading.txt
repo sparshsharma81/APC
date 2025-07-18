@@ -1,0 +1,17 @@
+it was introduced in jdk 1.2 version 
+it is not legacy 
+
+it is an implementation class to Map, sortedMap,
+
+
+In java..there are two ways of creating threads 
+1.by using thread class 
+2.by using runnable interface 
+
+using this..we can make thread and make it executable 
+
+
+like for example... we can create multiple pages...
+
+
+whenever more than one thread execute..then it will execute at random order 

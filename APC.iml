@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Lecture10(synchronisation lamda function--functional-interface)(14 july)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Lecture11(volatile-keyword ,predicate, lamda expression)(15july)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Lecture16(Annotations)(16july)" isTestSource="false" packagePrefix="Annotation_16_07" />
+      <sourceFolder url="file://$MODULE_DIR$/Lecture17(Custom_Annotations , Optional_class)(17july)" isTestSource="false" packagePrefix="APC.Lecture17" />
+      <sourceFolder url="file://$MODULE_DIR$/Lecture18(FileOperations)(18july)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Lecture3(Exception-handling)(2july)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Lecture6(Comparator, TreeSet)(7july)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Lecture7(Map,MultiThreading)(8july)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Lecture8(Threads)(9july)" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Lecture9(working)(10july)" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,31 @@
+String s = null;
+sout(10/0);
+
+
+throw and throws
+
+throw --- manual exception ko throw karna
+
+throws --it will tell the compiler that the method can throw exception 
+
+
+
+class Test{
+    psvm(String args[]){
+        m1(); 
+
+    }
+    psv m1() throws {
+        sout(10/0);
+        //it will throw exception basically --- the exception go throw m1..
+        //but if we add throws ..then it will throw the exception throw m1
+    }
+}
+
+
+exception ka parent class ---throwable ...
+
+
+VIRTUAL MEMORY ERROR --- like if i want to create a 2 crore size array===but we can not create that
+//the reason of this is because the compiler does not support this much memory--- so this is the error....
+

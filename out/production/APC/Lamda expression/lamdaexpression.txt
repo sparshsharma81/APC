@@ -1,0 +1,74 @@
+lamda expresssion --- code reduce ----
+
+before lamda expresssion we use java annonymous inner class to pass behaviour
+
+
+OLD WAY 
+Runnable r = new Runnable() {
+    public void run() {
+        System.out.println("Hello world");
+    }
+};
+
+
+
+🟢 Lambda way (Java 8+):
+
+Runnable r = () -> System.out.println("Hello world");
+✅ Much shorter and cleaner!
+
+
+🔷 Basic Lambda Syntax Examples
+Purpose	Lambda Expression
+
+
+No parameters                   	() -> System.out.println("Hi")
+One parameter	                    x -> x * x
+Two parameters	                    (a, b) -> a + b
+With type hint	                    (int a, int b) -> a * b
+Multi-line body	                    (a, b) -> { int c = a + b; return c; }
+
+
+
+
+
+🔷 Functional Interfaces: The Key to Lambda in Java
+❗ Java lambdas only work with functional interfaces.
+A functional interface has only one abstract method.
+
+✅ Example:
+
+@FunctionalInterface
+interface MyFunction {
+    void sayHello();
+}
+
+
+🟢 Use lambda like this:
+MyFunction greet = () -> System.out.println("Hello Lambda!");
+greet.sayHello();
+
+
+
+------------------FUNCTIONAL INTERFACE ------------------
+
+🔷 Built-in Functional Interfaces 
+(from java.util.function)
+
+Interface	                Signature	                    Example
+Consumer<T>	                void accept(T t)	            name -> System.out.println(name)
+Supplier<T>	                T get()                     	() -> "Hello"
+Function<T,R>	            R apply(T t)	                x -> x * x
+Predicate<T>	            boolean test(T t)	            x -> x > 0
+BiFunction<T,U,R>	        R apply(T t, U u)	            (a, b) -> a + b
+
+
+
+a lamda expression can have zero or more number of parameters(arguments)
+
+Ex:
+() -> sop("Hello");
+
+(int a) ->sop(a);
+(int a , int b)-> return a+b;
+

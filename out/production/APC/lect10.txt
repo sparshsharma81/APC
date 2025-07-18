@@ -1,0 +1,58 @@
+class Test{
+    int count =0;
+    psvm{
+        t1.start();
+        t2.start();
+
+    }
+    public void count(){
+        count++;
+    }
+
+}
+
+
+multithreading and synchhronisation 
+
+
+
+synchhronisation
+basically hamne 2 thread ek baari me chalahi ..aur hame 
+
+
+
+like if we want to borrow money from bank..
+then we can not withdraw it 
+
+
+this is basically when one thread is not completed..next thread is not processed
+
+Thought for 8 seconds
+  ️⃣1 What “multithreading” really means
+Thread = a lightweight flow of control inside a program.
+
+Multithreading lets several threads run as if they are doing work at the same time.
+
+On a single‑core CPU they share the core by quickly taking turns (time‑slicing).
+
+On a multi‑core CPU some threads can actually run in parallel.
+
+Typical reasons to use threads
+
+
+synchronized block
+
+
+
+Quick analogy to remember
+Think of threads as chefs in a kitchen.
+
+Shared fridge = shared data.
+
+Lock = key to the fridge; only one chef can open it at once.
+
+Semaphore(3) = only three chefs allowed at the stove together.
+
+Deadlock = two chefs each blocking the doorway waiting for the other to move.
+
+Stay aware of who holds which key, and your dishes will come out right—and on tim

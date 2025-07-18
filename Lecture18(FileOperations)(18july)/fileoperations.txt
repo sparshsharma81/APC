@@ -1,0 +1,3 @@
+FILE OPERATIONS IN JAVA 
+
+File f = new File(' ');

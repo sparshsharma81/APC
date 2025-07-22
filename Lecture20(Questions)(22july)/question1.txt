@@ -230,3 +230,58 @@ class B extends A{
 (B) valid 
 (c) throws at runtime 
 (d) checked cast required
+
+
+
+public class Test{
+    public static void main(String args[]){
+        try{
+            System.exit(0);
+
+        }
+        finally{
+            System.out.println("Finally Block");
+        }
+    }
+}
+
+the answer is no output 
+as finally block will only gives no output if we use exit 
+
+
+
+public class Test{
+    public static void main(String args[]){
+        try{
+            int i = Integer.parseInt("abc");
+        }
+        catch(NumberFormatException e){
+            System.out.println("Error");
+        }
+    }
+}
+
+(a)abc 
+(b)Error 
+(c)RunTime Error 
+(d) Compilation Error 
+
+
+
+
+what is the output? 
+
+
+class Shared{
+    int count =0;
+    synchronized void increment(){count++};
+
+    used by 10 threads each calling increments() 1000 times 
+
+
+
+}
+
+
+
+what is check exception 

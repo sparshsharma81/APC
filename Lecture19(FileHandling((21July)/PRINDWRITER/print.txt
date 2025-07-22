@@ -1,0 +1,6 @@
+in file writer or bufferwriter..then we need to put it in string 
+like everything boolean number everything we need to put in string 
+
+in print method class ---- we can simply put it 
+
+like we need not to write for next line with \n 

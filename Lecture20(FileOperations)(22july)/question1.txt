@@ -1,0 +1,146 @@
+what will be the output of the following code?
+
+Function<Integer,Integer> multiplyByTwo = x->x*2; ///these are predefined functional interface 
+Function<Integer,Integer>addThree = x -> x+3;
+Function <Integer,Integer>combined = multiplyByTwo, andThen(addThree);
+
+//basically in this combined function  the output of multiplyByTwo will go to addThree method 
+
+Systme.out.println(combined.apply(5));
+
+
+
+
+question-2
+
+What is the output of the following code ?
+
+FileWriter fw = new FileWriter("output.txt);
+fw.write("Java");
+fw.close();
+
+FileReader fr = new FileReader("output.txt");
+System.out.print((char) fr.read());
+fr.close(); //if the output.txt file exist ...what wil be the output of the code 
+
+
+(a)java  (b)J   (c)Compilation Eerror  (d) IoException
+
+ans --- option (b)J 
+
+
+
+
+class MyThread extends Thread{
+    public MyThread(String name){
+        this.setName(name);
+
+    }
+    @Override
+    public void run(){
+        try{
+            sleep(100);
+
+        }
+        catch(InterruptedException e){
+            e.printStackTrace();
+        }
+        play();
+    }
+    private void play(){
+        System.out.println(getName());
+        System.out.println(getName());
+
+    }
+}
+
+
+
+public class ThreadTest{
+    public static void main(String args[]){
+        Thread tableThread = new MyThread("Table");
+        Thread tennisthread = new MyThread("Tennis");
+        tableThread.start();
+        tennisThread.start();
+
+    }
+}
+
+//what will be the output of this program
+
+(a)this program will throw an illegalStateException
+(b) this program will always print the following --- TennisTennisTableTable
+(c) this program will always print the following : TableTableTennisTennis.
+(d) the output of the program cannot be predicted; it depends on thread scheduling 
+
+##basically option d - is it will give random output
+
+
+
+
+a) new 
+(b) runnable
+(c) waiting 
+(d) terminated 
+
+
+##ans --runnable 
+
+
+what is the state of thread after calling start() but before run() executes?
+
+Vector<Integer>v = new Vector<>(2);
+v.add(1);
+v.add(2);
+v.add(3);
+v.add(4);
+
+System.out.println(y.capacity());
+
+(a) 2 
+(b) 3
+(c) 4
+(d) 5
+
+
+(Q) What will be the output of the following code?
+public class Chitkara{
+    public static void main(String args[]){
+        try{
+            System.out.println("Inside try");
+            throw new RunnableException("Eerror");
+
+        }
+        finally{
+            System.out.println("Inside Finally");
+        }
+    }
+}
+
+(a) inside try
+(b) inside try      
+            inside finally 
+(c) inside try 
+        inside finally 
+        RuntimeException 
+
+(d) Compilation Error 
+
+
+#ans -- option(c)
+
+
+
+Which functional interface is sutable for a boolean-valued function 
+
+
+
+what is the output 
+try{
+    int[]arr = new int[5];
+    arr[5] = 100;
+}
+catch(ArrayIndexOutOfBoundsException e){
+    System.out.println("Error");
+
+}

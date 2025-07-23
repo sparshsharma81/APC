@@ -1,0 +1,82 @@
+method 
+
+class Test{
+    public static void main(String args[]){
+        //like if there is 100 lines of code 
+    }
+}
+
+
+method is block of statement and whenever we need that line of code..we will call that 
+
+in method ..we can pass multiple inputs but we get only one output 
+
+
+We can not define an method inside another method 
+
+
+
+EXAMPLE 
+public class MyClass {
+
+    public static void main(String[] args) {
+        sayHello(); // calling the method
+    }
+
+    public static void sayHello() {
+        System.out.println("Hello, World!");
+    }
+}
+
+
+
+this one is incorrect 
+public class MyClass {
+
+    public static void main(String[] args) {
+        // Not allowed — you can't define a method inside another method
+        public static void sayHello() {
+            System.out.println("Hello");
+            //incorrect 
+        }
+    }
+}
+
+
+
+🔹 Function
+A function is a block of code that performs a specific task.
+
+It is independent and does not belong to a class or object.
+
+Common in procedural languages like C, Python (at top level), etc.
+
+🔸 Example (C):
+
+
+int add(int a, int b) {
+    return a + b;
+}
+
+
+🔹 Method
+A method is a function defined inside a class.
+
+It is associated with an object or class.
+
+Common in OOP languages like Java, C++, C#, Python (within a class).
+
+🔸 Example (Java):
+
+class MyClass {
+    public int add(int a, int b) {
+        return a + b;
+    }
+}
+
+
+//we can pass a function as a parameter inside a method..
+but the parameter of the method should be a lamda function 
+
+
+like the parameter of a method should be lamda expression 

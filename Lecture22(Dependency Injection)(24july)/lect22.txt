@@ -1,0 +1,130 @@
+dependency injection 
+
+Dependency Injection (DI) is a design pattern in Java (and other programming languages) used to implement Inversion of Control (IoC), allowing for better modularity and making the code easier to test and maintain.
+
+🔧 What is Dependency Injection?
+Instead of a class creating its own dependencies, they are injected from the outside. This means an object receives other objects that it depends on (its dependencies) from an external source.
+
+✅ Why Use Dependency Injection?
+Promotes loose coupling between classes
+
+Enhances testability (easier to mock dependencies)
+
+Improves code reusability and maintainability
+
+Follows SOLID principles (especially the D - Dependency Inversion Principle)
+
+💡 Example Without DI:
+
+class Engine {
+    void start() {
+        System.out.println("Engine started.");
+    }
+}
+
+class Car {
+    private Engine engine;
+
+    public Car() {
+        this.engine = new Engine();  // tightly coupled
+    }
+
+    public void drive() {
+        engine.start();
+        System.out.println("Car is driving.");
+    }
+}
+Problems:
+
+Car is tightly coupled to Engine
+
+Hard to test with a mock Engine
+
+✅ Example With Constructor-Based DI:
+
+class Engine {
+    void start() {
+        System.out.println("Engine started.");
+    }
+}
+
+class Car {
+    private Engine engine;
+
+    public Car(Engine engine) {
+        this.engine = engine;  // dependency injected
+    }
+
+    public void drive() {
+        engine.start();
+        System.out.println("Car is driving.");
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        Engine engine = new Engine();
+        Car car = new Car(engine);  // injection happens here
+        car.drive();
+    }
+}
+
+
+
+🧰 Types of Dependency Injection in Java
+Constructor Injection – dependencies passed via constructor
+
+Setter Injection – dependencies set via public setters
+
+Field Injection – dependencies injected directly into fields (e.g., using annotations like @Autowired in Spring)
+
+🌱 Using Spring Framework for DI
+Spring is a popular framework that provides built-in support for DI via annotations or XML config.
+
+Example using Spring:
+
+
+
+@Component
+class Engine {
+    void start() {
+        System.out.println("Engine started.");
+    }
+}
+
+@Component
+class Car {
+    private final Engine engine;
+
+    @Autowired
+    public Car(Engine engine) {
+        this.engine = engine;
+    }
+
+    public void drive() {
+        engine.start();
+        System.out.println("Car is driving.");
+    }
+}
+
+
+
+@SpringBootApplication
+public class App {
+    public static void main(String[] args) {
+        ApplicationContext context = SpringApplication.run(App.class, args);
+        Car car = context.getBean(Car.class);
+        car.drive();
+    }
+}
+🧪 Testing with Mocks (e.g., using Mockito)
+
+@Test
+public void testCarDrive() {
+    Engine mockEngine = Mockito.mock(Engine.class);
+    Car car = new Car(mockEngine);
+    car.drive();
+
+    Mockito.verify(mockEngine).start();
+}

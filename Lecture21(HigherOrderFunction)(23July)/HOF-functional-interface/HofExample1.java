@@ -1,4 +1,4 @@
-package Lecture21(HigherOrderFunction)(23July).HOF-functional-interface;
+package Lecture21(HigherOrderFunction)(23July;
 
 import java.util.*;
 import java.util.function.Function;

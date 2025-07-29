@@ -1,0 +1,45 @@
+spring 
+
+ENTERPRISE APPLICATION
+
+An enterprise application (EA) is a large-scale software system designed to 
+operate in a corporate or business environment.
+It supports the needs of an entire organization rather than just individuals.
+
+
+DISTRIBUTED APPLICATION 
+when there are multiple distributers 
+like in amazon if we buf product then the payment is though googlepay ..but googleplay is not developed by amazon
+ so in this ways...there are multiple functions ..this is known as distributed application 
+
+
+
+ webservices --- they are used to communicate between the services .. 
+
+SPRING --- framework 
+if we take someone else framework into our application..then we can make our application fast 
+
+Internalization --- 
+
+latest spring version 6 is going on 
+
+
+.jar ----- java archieve file 
+like in case of images --- we convert them to zip file and then share them 
+similarly in case of java ..jar file contains all the modules 
+
+
+
+SPRING PROJECT --- IT IS A JAVA PROJECT AND WE ARE USING THE MODULE WHICH WE REQUREIED 
+
+To prepare a simple spring project we need the following jar 
+
+spring-core-version.jar
+spring-beans-version.jar
+Spring-context-version.jar
+Spring-context-support 
+
+////
+
+
+in jfrog -- all the jar files are present 

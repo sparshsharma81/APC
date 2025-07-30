@@ -1,0 +1,18 @@
+plane object model -- POM
+
+plane old java object -- POJO 
+
+every framework has a bean class which do all the work by itself 
+
+in spring frameowrk , all the classes must be a pojo classes, where the pojo class is a norma class.
+it must not extend or implement predefined libraries, explicitly except java.io.Serializable maker interface .
+
+by using the pojo classes in spring application, we are able to prepare all the components as less API dependent 
+and light weight components.
+
+2.in spring framwork , all bean classes must be public, not abstract, and not-final classes.
+where the main purpose of the public is to bring bean classes scope to the spring framework in order to create bean objects.
+
+in spring based application , spring framework has to create objects for the bean classes,  
+
+in the source/main folder..we will create a resources folder 

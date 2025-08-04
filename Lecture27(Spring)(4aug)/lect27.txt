@@ -1,0 +1,14 @@
+pom.xml --- dependencies 
+
+bean class --- object creation, instance , destroy 
+
+spring-config.xml ---- object creation 
+
+Main class --- we are using bean class without using objects 
+-- bina object banahe ek class ki property ko dusre me kaise use kare 
+
+Bean class ----Student 
+like student has id , name , course ,trainer 
+
+
+arctype --- it create basic spring project structure 

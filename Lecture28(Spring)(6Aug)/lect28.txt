@@ -1,0 +1,40 @@
+in @ComponentScan()
+--- if we do not pass any package..then by default it will take the package 
+
+
+ApplicationContext app = new AnnotationConfigApplicationContext(App.class)
+
+
+@AutoWired
+
+@Value --- the values go to a particular field
+
+
+
+@Value("rajpura")
+private String city;
+
+rajpura will go in city
+
+
+
+JDBC -- java database connectivity 
+
+HOW TO IMPORT JAR FILES
+
+1)RIGHT CLICK
+2)GO TO PROPERTIES
+3)Java Build Path
+4)Libraries
+5)ClassPath
+6)Add External JARs..
+7)Select the location of the file 
+and click on apply and close 
+
+
+
+Step1)Driver---load (Optional)
+Step2)We establish connection between database and java
+step3)Query -- insetion , deletion , and updation 
+step4)Execute 
+step5)Connection close 

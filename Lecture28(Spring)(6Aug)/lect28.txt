@@ -38,3 +38,35 @@ Step2)We establish connection between database and java
 step3)Query -- insetion , deletion , and updation 
 step4)Execute 
 step5)Connection close 
+
+
+
+
+
+package JDBC_FIRST_Program;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class JDBC_FIRST_PROGRAM {
+	public static void main(String args[]) throws ClassNotFoundException, SQLException {
+		
+		//step-1
+		Class.forName(" com.mysql.cj.jdbc.Driver.");
+		String url = "jdbc:mysql://<host>:<port>/<database_name>";
+		//all the server has a default port = 3306
+		String url1 = "jdbc:mysql://localhost:3306/";
+		String username = "root";
+		String password = "root";
+		//everyone has root by default
+		Connection con = DriverManager.getConnection(url,username,password);
+		//drivermanager has a method called getconnection --where we pass url username and password
+		
+		
+	}
+}
+
+
+driver manager--- it is a connection between database and data 
+driver manager has a method called getConnection which is used to fetch the data 

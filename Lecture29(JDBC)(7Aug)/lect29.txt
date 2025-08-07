@@ -1,0 +1,41 @@
+in project --- driver.java
+
+package---class 
+step--5 
+
+step1: driver --load -- class 
+ 
+
+we will pass the driver in the mysql 
+
+
+step1: Driver - load -- class 
+
+clsas.forName(Driver) ----MySql --oracle 
+
+
+
+step2: Java & Database ----Connection 
+username , password ---------Driver Manager 
+
+DriverManager --getConnection(url,username,password );
+
+
+step3:
+
+Statement st = Connnection CreateStatement();
+
+step4: select queries and non select queries 
+
+for the non-select querie--- we have executeUpdate method --- that is the query 
+
+select query --- execute Query method 
+
+
+
+step-5 
+closing 
+
+
+
+

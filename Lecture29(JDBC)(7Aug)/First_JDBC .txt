@@ -1,0 +1,21 @@
+package com.springcore_6aug.aug_2;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class JDBC_First_program {
+	public static void main(String args[]) throws ClassNotFoundException, SQLException {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		String url = "jdbc:mysql://localhost:3306";
+		String username ="root";
+		String password = "root";
+		Connection con = DriverManager.getConnection(url,username,password);
+		String createDatabase = "create database db";
+		Statement st = con.createStatement();
+		  			  st.executeUpdate(createDatabase);
+		  			  
+		  			  st.close();
+	}
+}

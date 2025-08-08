@@ -1,0 +1,90 @@
+package JDBC_FIRST_Program;
+//
+//import java.sql.Connection;
+//import java.sql.DriverManager;
+//import java.sql.SQLException;
+//
+//public class JDBC_FIRST_PROGRAM {
+//	public static void main(String args[]) throws ClassNotFoundException, SQLException {
+//		
+//		//step-1
+//		Class.forName(" com.mysql.cj.jdbc.Driver.");
+//		String url = "jdbc:mysql://<host>:<port>/<database_name>";
+//		//all the server has a default port = 3306
+//		String url1 = "jdbc:mysql://localhost:3306/";
+//		String username = "root";
+//		String password = "root";
+//		//everyone has root by default
+//		Connection con = DriverManager.getConnection(url,username,password);
+//		//drivermanager has a method called getconnection --where we pass url username and password
+//		
+//		
+//	}
+//}
+
+//package com.springcore_6aug.aug_2;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.*;
+
+public class JDBC_First_program {
+	public static void main(String args[]) throws ClassNotFoundException, SQLException {
+		
+		Scanner sc = new Scanner(System.in);
+		{
+			int rollno = sc.nextInt();
+			String name = sc.next();
+			
+		
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		String url = "jdbc:mysql://localhost:3306/db3";
+		String username ="root";
+		String password = "root";
+		Connection con = DriverManager.getConnection(url,username,password);
+		String createDatabase = "create database db3";
+		Statement st = con.createStatement();
+//		  			  int count = st.executeUpdate(createDatabase);
+//			System.out.println(count);
+			
+//		st.executeUpdate("drop table if exists student");
+		String createTable = "create table if not exists student(rollNo int, name varchar(100))";
+		 st.executeUpdate(createTable);
+		
+//		System.out.println(count);
+//		String insertData = "insert into student(rollNo, name) values(1,'Abcd')";
+			
+			String insertInputData = "insert into student(rollNo,name) values("+rollno+",'"+name + "')";
+			st.executeUpdate(insertInputData);
+			
+//			String updateinput = "update student set rollNo="+rollno +"where name='"+name+"'";
+//			st.executeUpdate(updateinput);
+			
+//			int delRoll = sc.nextInt();
+//			String deleteQuery = "delete from student where rollNo = " + delRoll;
+//			int deleted = st.executeUpdate(deleteQuery);
+//			if (deleted > 0)
+//			    System.out.println("Record deleted successfully.");
+//			else
+//			    System.out.println("No record found with the given roll number.");
+//			
+			
+			String query = "select * from student";
+					ResultSet rs = st.executeQuery(query);
+					
+					
+			while(rs.next()) {
+				System.out.println(rs.getInt(1) + " " + rs.getString(2));
+			}
+			
+			
+			//bash updation --- all the queries are updated at once 
+			
+		  			  st.close();
+		}
+		  			  
+	}
+}

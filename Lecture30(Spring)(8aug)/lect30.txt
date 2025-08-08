@@ -1,0 +1,9 @@
+String query = "insert into Student(rollno, name)
+
+values("+rollno+","+name+"");
+
+String query = "update Student set rollno + "where name = '" + name + "'";
+
+
+String query = "delete from Student where rollno="+rollno;
+

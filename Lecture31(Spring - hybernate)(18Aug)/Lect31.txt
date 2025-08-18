@@ -1,0 +1,25 @@
+String query = "Select * from student1"
+ResultSet st = st.executeQuery(query);
+
+while(rs.next()){
+    Sout(rs.setint(1) + " " + rs.getString(2));
+}
+
+
+RowMapper -- interface --- which has maprow
+
+public student fetch(int roll){
+    
+    String query = "Select * from student where roll no = ?";
+    jd.queryForObject(query,roll);
+}
+
+
+class RW implements RowMapper{
+    
+    MapRow(ResultSet){
+        Student s = new Student();
+        s.setRollNo(rs.getInt(1));
+        s.setName(rs.getString(2));
+    }
+}

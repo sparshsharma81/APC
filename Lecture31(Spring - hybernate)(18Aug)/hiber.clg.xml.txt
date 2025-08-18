@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-*'?>
+<?Doctype hibernate-configuration PUBLIC 
+"-//Hibernate/Hibernate configuration DTD 5.3//EN"
+"http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory>
+<property name = "hibernate.connection.driverClassName">com.jdbc.cj.mysql.Driver</property>
+<property name = "hibernate.connection.url">jdbc:mysql://localhost:3306/db</property>

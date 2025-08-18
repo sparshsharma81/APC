@@ -1,0 +1,20 @@
+
+
+when we are using hybernate..we need not to write queries ..
+we need not to write basic queries like which we have to in sql
+
+
+HYBERNATE CORE 
+
+MYSEQUL CONNECTOR 
+
+JAR FILES ARE IN MAVEN DEPENDENCIES..MAVEN CONNECTOR 
+
+
+
+
+mysql-connector-j 
+hybernate core 
+
+two dependencies in pom.xml 
+version 9.0

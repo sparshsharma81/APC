@@ -1,0 +1,19 @@
+package com.hiberate_Project_g25;
+import org.hiberate.cfg.configuration
+
+public class App{
+    public static void main(String args[]){
+        Configuration cf = new Configuration();
+        cf.configure("hiber.cfg.xml");
+        
+        SessionFactory sf = cf.buildSessionFactory();
+        Session session = sf.openSession();
+
+        //now here we have maken the reference session object..
+        //this session has all the methods of update, delete ,
+
+
+        session.beginTransaction();
+        session.save();
+    }
+}

@@ -1,0 +1,65 @@
+hibernate --- driverClassName --- url , username , password 
+
+hibernate --- HQL
+
+dialet -- the query which hiberate generate...
+so dialet will work like..
+dialet will tell which language is the work going on 
+
+
+dialet is used to do mapping 
+
+
+package Entity;
+import jakarta.persistence.Entity;
+
+@Entity
+public class Student{
+    
+}
+
+
+
+
+package Entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "Student_Details")
+
+public class Student {
+	
+	@Column(name = "Student_RollNo")
+	@Id
+	private int rollNo;
+	
+	@Column(name = "Student_Name")
+	private String name;
+	
+	@Column(name = "Student_Salary")
+	private int salary;
+	
+
+}
+
+
+
+
+hybernate has save() method for insert 
+
+update() method for update 
+
+delete() for delete 
+ 
+ --we have to create session object 
+
+
+
+ first we create session factory then we create session object and then 
+ we can use its methods 
+
+
+ we have configuration class which is present in hybernate which ..which
+  will check if it will load or not

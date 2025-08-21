@@ -1,0 +1,17 @@
+one to many mapping 
+
+employee id and employee name 
+
+
+
+
+Hibernate lifecycle 
+
+transistent state --- persistent state ---- detached state 
+
+
+when we make the entitiy class of student 
+
+
+
+SPRING ORM

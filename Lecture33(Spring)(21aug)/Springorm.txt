@@ -1,0 +1,23 @@
+in Spring orm 
+everything is done by spring 
+
+throw beans configuration automatically 
+the work is done by spring orm 
+
+we need not to write query and 
+session factory
+session 
+begintransaction 
+connect c
+
+
+
+
+insert in springjdbc 
+
+
+jdbc template --- datasource --- drivermanagerdatasource 
+
+studentDao
+
+

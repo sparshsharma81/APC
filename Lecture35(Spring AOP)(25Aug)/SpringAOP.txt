@@ -1,0 +1,128 @@
+Spring AOP (Aspect Oriented Programming)
+
+Class Service{
+    public void payment(){
+        System.out.println("Amount Credited");
+        System.out.println("Amount Debited");
+    }
+}
+
+//like if we do not want to do changes 
+//and like we want that before it ..functionality add 
+
+
+class OrderService{
+    ordering();
+}
+
+class ProductService(){
+    AddProduct();
+}
+
+class CreateService(){
+    AAddCart();
+}
+
+-----------------------------
+Spring AOP (Aspect Oriented Programming) - Detailed Notes
+-----------------------------
+
+What is Spring AOP?
+-------------------
+AOP (Aspect Oriented Programming) is a programming paradigm that allows you to separate cross-cutting concerns (like logging, security, transactions) from your main business logic. In Spring, AOP is used to modularize these concerns so you don’t have to repeat code in multiple places.
+
+Key Concepts in Spring AOP
+--------------------------
+1. Aspect: A module that encapsulates a cross-cutting concern (e.g., logging, security). In Spring, an aspect is usually a class annotated with @Aspect.
+2. Advice: The action taken by an aspect at a particular join point (e.g., a method call). Types: @Before, @After, @AfterReturning, @AfterThrowing, @Around.
+3. Join Point: A point in the execution of the program (e.g., method execution) where an aspect can be applied.
+4. Pointcut: An expression that matches join points (e.g., all methods in a package).
+5. Weaving: The process of linking aspects with other application types or objects to create an advised object.
+
+Why Use Spring AOP?
+-------------------
+- To avoid code duplication for common concerns (logging, security, transactions).
+- To keep business logic clean and focused.
+- To add or change cross-cutting concerns without modifying business code.
+
+Example Scenario
+----------------
+Suppose you have a Service class with a payment() method. You want to log every time a payment is made, but you don’t want to add logging code inside every method.
+
+Without AOP:
+------------
+public void payment() {
+    System.out.println("Logging: Payment started");
+    // business logic
+    System.out.println("Amount Credited");
+    System.out.println("Amount Debited");
+    System.out.println("Logging: Payment ended");
+}
+
+With AOP:
+---------
+- You write a separate aspect for logging.
+- The business method remains clean.
+
+How to Use Spring AOP
+---------------------
+1. Add Spring AOP dependency (if using Maven):
+   <dependency>
+       <groupId>org.springframework.boot</groupId>
+       <artifactId>spring-boot-starter-aop</artifactId>
+   </dependency>
+
+2. Create an Aspect:
+   @Aspect
+   @Component
+   public class LoggingAspect {
+       @Before("execution(* com.example.Service.payment(..))")
+       public void logBefore() {
+           System.out.println("Logging: Payment started");
+       }
+   }
+
+3. Business Service:
+   @Component
+   public class Service {
+       public void payment() {
+           System.out.println("Amount Credited");
+           System.out.println("Amount Debited");
+       }
+   }
+
+4. Spring will automatically apply the aspect before the payment() method.
+
+Types of Advice in Spring AOP
+----------------------------
+- @Before: Runs before the method execution.
+- @After: Runs after the method execution (regardless of outcome).
+- @AfterReturning: Runs after the method returns successfully.
+- @AfterThrowing: Runs if the method throws an exception.
+- @Around: Runs before and after the method execution (can control whether the method executes).
+
+Summary
+-------
+- Spring AOP helps you modularize cross-cutting concerns.
+- You define aspects and advice separately from business logic.
+- Spring weaves these aspects into your application at runtime.
+- This leads to cleaner, more maintainable code.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+````````````````````````````````````````````````````````````````````````````````
+in the maven repository we have to search aspectjrt

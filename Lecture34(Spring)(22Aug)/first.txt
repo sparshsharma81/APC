@@ -1,0 +1,53 @@
+package com.spring_core_g25.com.spring_core_g25;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.orm.hibernate5.HibernateTemplate;
+
+import Dao.StudentDao;
+import Entity.Student;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+//        System.out.println( "Hello World!" );
+    	ApplicationContext app = (ApplicationContext) new ClassPathXmlApplicationContext("Spring-config.xml");
+    	StudentDao student = (StudentDao) app.getBean("studentdao");
+    	HibernateTemplate h = (HibernateTemplate) app.getBean("hibernateTemplate");
+    	
+    	Student s = h.get(Student.class,2);
+    	s.setSname("Vansh");
+    	studentdao.update(s);
+    	
+//    	Student s = studentdao.fetch();
+//    	System.out.println(s.getSid() +" " + s.getSname());
+    	
+    }
+}
+
+
+
+
+
+
+
+
+package Dao;
+
+import org.springframework.orm.hibernate.HibernateTemplate;
+import Entity.Student;
+public class StudentDao {
+
+	public void insert(Student student) {
+		//logic 
+		hibernateTemplate.save(student);
+		//save() --- hybernate template 
+		//this insert method uses save method ..which is avaibale in hybernate template
+		//now we create hybernate template object then we will use it 
+		
+	}
+}

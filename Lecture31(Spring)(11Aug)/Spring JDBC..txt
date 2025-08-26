@@ -1,0 +1,11 @@
+Spring JDBC
+
+1.Driver load
+2.establish connection with java and database 
+3.  query 
+4.execute 
+5.close connection 
+
+
+
+JDBC template --- multiple method --- query     

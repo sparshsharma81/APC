@@ -1,0 +1,30 @@
+driver manager data source
+
+
+ctrl shift t
+
+<bean class = "org.springframework.jdbc.datasource.DriverManagerDataSource"></bean>
+
+<bean id = "datasource" class = "rog..springframework.jdbc.datasource.DriverManagerDataSource">
+<property name = "driverClassName" value = "com.mysql.cj.jdbc.Driver"></property>
+<property name = "url" value = "jdbc:mysql://localhost:3306
+
+
+public class App{
+    public static void main(String args[]){
+        ApplicationContext app = new ClassPathXmlApplicationContext("Spring-context.xml");
+
+
+        String query = "insert into student(rollNo , name) values(?,?)";
+        temp.update(query,1,"koshi");   
+
+    }
+}
+
+
+
+
+@Configuration
+public class AppConfig{
+    public static void main
+}

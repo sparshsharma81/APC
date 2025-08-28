@@ -1,0 +1,12 @@
+package Controller;
+
+@Controller
+
+public class FormControler{
+    @RequestMapping("/form")
+    public String showForm() {
+        System.out.println("Hello world");
+        System.out.println("Java Programming");
+        return "form";
+    }
+}

@@ -1,0 +1,25 @@
+dispatcher servlet 
+
+Spring mvc 
+
+package Controller;
+@Controller
+public class FormControler{
+    @RequestMapping("/form")
+    public String showForm() {
+        return "form";
+    }
+}
+
+
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE bean PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+        <beans>
+            <bean id="formController" class="Controller.FormController"/>
+        </beans>
+
+
+
+

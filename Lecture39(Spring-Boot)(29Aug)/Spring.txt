@@ -1,0 +1,52 @@
+1)Spring core ---- dependency 
+1)Component scan 
+2)Component 
+3)configuration 
+
+ii)Spring JDBC --- Database operation 
+
+3)Spring ORM --- hibernate - the benefits
+
+
+Spring MVC -- Model-View-Controller 
+//it is used to develop web application 
+//like we can run the code on server in MVC
+
+download server --- ide -- server 
+spring create project -- server 
+
+Servlet, Mapping class 
+
+
+Spring has a module called SpringBoot 
+//in spring..we have to do manual work a lot..so we use spring-boot 
+
+
+
+Spring Boot 
+
+1.Purpose of Spring Boot 
+Reduces the manual configuration required in traditional Spring. 
+in Spring(without Boot), we had to:
+Create XML configuration files
+Manually configure all the files
+Spring Boot 
+
+
+
+Auto-Configurationn with dependencies
+.when a dependency is added in the project, Spring Boot automatically configures it.
+Example -- 
+if we add Spring Data JPA, Boot 
+-- Auto configures the JPA setup
+-- Adds all required JAR files related to JPA and database handling 
+
+
+
+Spring boot starter 
+
+
+Spring web -- dependency 
+
+
+all the dot class are compile in target folder 

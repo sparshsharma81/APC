@@ -1,0 +1,27 @@
+@RequestMapping("/contact");
+public void contact(Model m) {
+    m.addAttribute("name","Ravi");
+    m.addAttribute("id",101);
+    m.addAttribute("city","Delhi");
+    return "contact";
+}
+
+
+
+<% %>
+inside this we can write java declaration code only ...not execution code 
+
+<%   String name = "Ravi";
+   int id = 101;
+   String city = "Delhi";
+
+   //request method returns request class 
+   //we need to typecast it
+
+   String name = (String)request.getAttribute("key"); %>
+
+%>
+
+
+
+

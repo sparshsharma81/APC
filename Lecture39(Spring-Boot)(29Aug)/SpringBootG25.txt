@@ -1,0 +1,19 @@
+package com.Spring_Boot_G25;
+
+
+
+//this is target annotations
+
+in spring boot -- applicationn -- which is mixture 
+it is a mixture of three annotations 
+1.ComponentScan --- scans the package for Spring components
+2.EnableAutoConfiguration --- enables Spring Boot's auto-configuration feature
+3.SpringBootConfiguration --- indicates that this class provides Spring Boot configuration
+
+@SpringBootApplication
+public class Main{
+    public static void main(String[] args) {
+        SpringApplication.run(Main.class, args);
+        
+    }
+}

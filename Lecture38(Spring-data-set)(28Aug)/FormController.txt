@@ -1,0 +1,32 @@
+@RequestMapping("/form")
+public String showForm(Model m) {
+    System.out.println("Inside showForm method");
+    m.addAttribute("formData", new FormData());
+    return "form";
+}   
+
+
+
+
+public String userform(){
+    return "userform";
+}
+
+
+@PostMapping("/processform")    
+@RequestMapping("/userform");
+public String userform(){
+    return "userform";
+}
+
+@RequestMapping("/formdata");
+public void formdata(){
+    System.out.println("Inside formdata method");
+    return "formdata";
+}
+
+public void formdata(@RequestParam("username") String name, @RequestParam("email") String email){
+    System.out.println("Inside formdata method");
+    System.out.println("Username: " + name);
+    System.out.println("Email: " + email);
+}

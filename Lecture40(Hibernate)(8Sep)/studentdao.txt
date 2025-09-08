@@ -1,0 +1,17 @@
+@controller 
+
+spring.application.name = StudentManagementSystem
+spring.datasource.url = jdbc:mysql://localhost:3306/studentdb
+
+
+spring.datasource.username = root
+spring.datasource.password = root
+spring.jpa.hibernate.ddl-auto = update
+spring.jpa.show-sql = true
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL8Dialect
+
+dialect --- my sql 
+server.port = 8087
+
+spring.mvc.pathmatch.matching-strategy = ANT_PATH_MATCHER 
+#spring.mvc.pathmatch.matching-strategy = PATH_PATTERN_PARSER
